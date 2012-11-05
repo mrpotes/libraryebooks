@@ -1,1 +1,1 @@
-web: play run --http.port=$PORT $PLAY_OPTS
+web: target/start --http.port=$PORT $JAVA_OPTS -DapplyEvolutions.default=true
